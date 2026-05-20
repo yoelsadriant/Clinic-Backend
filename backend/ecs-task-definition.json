@@ -1,0 +1,46 @@
+{
+  "family": "ibclinic-backend",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ibclinic-task-role",
+  "containerDefinitions": [
+    {
+      "name": "ibclinic-backend",
+      "image": "ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/ibclinic-backend:latest",
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        { "name": "SPRING_PROFILES_ACTIVE", "value": "prod" }
+      ],
+      "secrets": [
+        { "name": "DATASOURCE_URL",      "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:ibclinic/db-url" },
+        { "name": "DATASOURCE_USERNAME", "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:ibclinic/db-username" },
+        { "name": "DATASOURCE_PASSWORD", "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:ibclinic/db-password" },
+        { "name": "JWT_SECRET",          "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:ibclinic/jwt-secret" }
+      ],
+      "healthCheck": {
+        "command": ["CMD-SHELL", "wget -qO- http://localhost:8080/actuator/health || exit 1"],
+        "interval": 30,
+        "timeout": 10,
+        "retries": 3,
+        "startPeriod": 60
+      },
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/ibclinic-backend",
+          "awslogs-region": "REGION",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "essential": true
+    }
+  ]
+}

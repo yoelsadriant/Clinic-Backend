@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <springProfile name="!prod,!docker">
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+    <root level="INFO">
+      <appender-ref ref="CONSOLE"/>
+    </root>
+    <logger name="com.ultimindstudio" level="DEBUG"/>
+  </springProfile>
+
+  <springProfile name="prod,docker">
+    <appender name="JSON_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+        <pattern>{"time":"%date{ISO8601}","level":"%level","logger":"%logger{36}","thread":"%thread","msg":"%message","exception":"%exception{short}"}%n</pattern>
+      </encoder>
+    </appender>
+    <root level="WARN">
+      <appender-ref ref="JSON_CONSOLE"/>
+    </root>
+    <logger name="com.ultimindstudio" level="INFO"/>
+  </springProfile>
+</configuration>
