@@ -9,6 +9,7 @@ frontend/.vite/
 
 # IDE
 .idea/
+.claude/
 *.iml
 
 # Env
