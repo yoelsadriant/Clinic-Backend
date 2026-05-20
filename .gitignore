@@ -15,6 +15,3 @@ frontend/.vite/
 # Env
 .env
 *.env.local
-
-# Misc
-old-project.zip
