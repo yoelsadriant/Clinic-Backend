@@ -13,24 +13,31 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.*;
+import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.http.MediaType;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.web.reactive.server.WebTestClient;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class AuthControllerIT extends AbstractIntegrationTest {
 
-    @Autowired TestRestTemplate restTemplate;
+    @LocalServerPort int port;
+
     @Autowired TypeAppRepository typeAppRepository;
     @Autowired LoginRepository loginRepository;
     @Autowired PasswordEncoder passwordEncoder;
 
+    WebTestClient client;
     TypeApp adminType;
 
     @BeforeEach
     void setUp() {
+        client = WebTestClient.bindToServer()
+                .baseUrl("http://localhost:" + port)
+                .build();
+
         loginRepository.deleteAll();
         adminType = typeAppRepository.findAll().stream()
                 .filter(t -> "ADMIN".equals(t.getAppType()))
@@ -45,62 +52,76 @@ class AuthControllerIT extends AbstractIntegrationTest {
 
     @Test
     void login_validCredentials_returns200WithToken() {
-        LoginRequest req = new LoginRequest("testadmin", "admin123");
-        ResponseEntity<LoginResponse> response = restTemplate.postForEntity("/api/v1/auth/login", req, LoginResponse.class);
-
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).isNotNull();
-        assertThat(response.getBody().token()).isNotBlank();
-        assertThat(response.getBody().role()).isEqualTo("ROLE_ADMIN");
-        assertThat(response.getBody().type()).isEqualTo("Bearer");
+        client.post().uri("/api/v1/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(new LoginRequest("testadmin", "admin123"))
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(LoginResponse.class)
+                .value(resp -> {
+                    assertThat(resp.token()).isNotBlank();
+                    assertThat(resp.role()).isEqualTo("ROLE_ADMIN");
+                    assertThat(resp.type()).isEqualTo("Bearer");
+                });
     }
 
     @Test
     void login_wrongPassword_returns401() {
-        LoginRequest req = new LoginRequest("testadmin", "wrongpassword");
-        ResponseEntity<Object> response = restTemplate.postForEntity("/api/v1/auth/login", req, Object.class);
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+        client.post().uri("/api/v1/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(new LoginRequest("testadmin", "wrongpassword"))
+                .exchange()
+                .expectStatus().isUnauthorized();
     }
 
     @Test
     void login_unknownUser_returns401() {
-        LoginRequest req = new LoginRequest("nobody", "anything");
-        ResponseEntity<Object> response = restTemplate.postForEntity("/api/v1/auth/login", req, Object.class);
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+        client.post().uri("/api/v1/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(new LoginRequest("nobody", "anything"))
+                .exchange()
+                .expectStatus().isUnauthorized();
     }
 
     @Test
     void register_asAdmin_returns201() {
         String adminToken = getToken("testadmin", "admin123");
-        RegisterUserRequest req = new RegisterUserRequest("newdoctor", "doc123", adminType.getId());
 
-        HttpHeaders headers = new HttpHeaders();
-        headers.setBearerAuth(adminToken);
-        HttpEntity<RegisterUserRequest> entity = new HttpEntity<>(req, headers);
-
-        ResponseEntity<LookupResponse> response = restTemplate.exchange(
-                "/api/v1/auth/register", HttpMethod.POST, entity, LookupResponse.class);
-
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
-        assertThat(response.getBody().name()).isEqualTo("newdoctor");
+        client.post().uri("/api/v1/auth/register")
+                .header("Authorization", "Bearer " + adminToken)
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(new RegisterUserRequest("newdoctor", "doc123", adminType.getId()))
+                .exchange()
+                .expectStatus().isCreated()
+                .expectBody(LookupResponse.class)
+                .value(resp -> assertThat(resp.name()).isEqualTo("newdoctor"));
     }
 
     @Test
     void register_withoutAuth_returns401() {
-        RegisterUserRequest req = new RegisterUserRequest("hacker", "pass", 1L);
-        ResponseEntity<Object> response = restTemplate.postForEntity("/api/v1/auth/register", req, Object.class);
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+        client.post().uri("/api/v1/auth/register")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(new RegisterUserRequest("hacker", "pass", 1L))
+                .exchange()
+                .expectStatus().isUnauthorized();
     }
 
     @Test
     void healthCheck_isPublic() {
-        ResponseEntity<Object> response = restTemplate.getForEntity("/actuator/health", Object.class);
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        client.get().uri("/actuator/health")
+                .exchange()
+                .expectStatus().isOk();
     }
 
     private String getToken(String username, String password) {
-        LoginRequest req = new LoginRequest(username, password);
-        LoginResponse resp = restTemplate.postForObject("/api/v1/auth/login", req, LoginResponse.class);
+        LoginResponse resp = client.post().uri("/api/v1/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(new LoginRequest(username, password))
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(LoginResponse.class)
+                .returnResult()
+                .getResponseBody();
         assertThat(resp).isNotNull();
         return resp.token();
     }

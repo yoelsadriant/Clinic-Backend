@@ -5,6 +5,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.jspecify.annotations.Nullable;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -39,7 +40,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-    private String extractToken(HttpServletRequest request) {
+    private @Nullable String extractToken(HttpServletRequest request) {
         String header = request.getHeader("Authorization");
         if (StringUtils.hasText(header) && header.startsWith("Bearer ")) {
             return header.substring(7);

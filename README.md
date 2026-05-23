@@ -6,18 +6,18 @@ A complete clinic management system for IB Clinic, ported from the original Unit
 
 | Layer | Technology |
 |---|---|
-| Backend | Spring Boot 3.3.5 · Java 21 · Spring Security 6 · JWT |
+| Backend | Spring Boot 4.0.6 · Java 25 LTS · Spring Security 7 · JWT |
 | Database | PostgreSQL 16 · Flyway migrations |
 | Frontend | React 18 · Vite · Tailwind CSS · React Router v6 |
 | Infra | Docker Compose · AWS ECS Fargate (prod) · RDS PostgreSQL |
-| Tests | JUnit 5 · Mockito · TestContainers |
+| Tests | JUnit 5 · Mockito · Testcontainers · WebTestClient |
 
 ---
 
 ## Quick Start (Local Dev)
 
 ### Prerequisites
-- Java 21+
+- Java 25 LTS
 - Docker (for the database)
 - Node.js 22+ (LTS)
 
@@ -152,9 +152,9 @@ cd backend
 
 **Test coverage:**
 - 16 unit tests (AuthService × 4, ClientService × 8, ScheduleService × 4) — always pass
-- Integration tests (Spring context load, AuthController, ClientController) — require Docker with API ≥ 1.41
+- Integration tests (AuthController, ClientController) use `WebTestClient` against a real running server — require Docker with API ≥ 1.41
 
-> Note: TestContainers integration tests are skipped automatically (`disabledWithoutDocker = true`) on Rancher Desktop due to a docker-java 1.32 probe vs. Rancher Desktop minimum API 1.41 incompatibility. They run on standard Docker Engine / CI.
+> Note: Testcontainers integration tests are skipped automatically (`disabledWithoutDocker = true`) on Rancher Desktop due to a docker-java 1.32 probe vs. Rancher Desktop minimum API 1.41 incompatibility. They run on standard Docker Engine / CI.
 
 ---
 

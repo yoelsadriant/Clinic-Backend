@@ -1,6 +1,5 @@
 package com.ultimindstudio.clinic;
 
-import com.ultimindstudio.clinic.AbstractIntegrationTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

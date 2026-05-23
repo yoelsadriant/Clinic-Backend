@@ -28,6 +28,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.security.core.GrantedAuthority;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -57,8 +58,7 @@ class AuthServiceImplTest {
         Authentication auth = mock(Authentication.class);
         when(auth.getPrincipal()).thenReturn(userDetails);
         when(userDetails.getUsername()).thenReturn("admin");
-        @SuppressWarnings("unchecked")
-        Collection authorities = List.of(new SimpleGrantedAuthority("ROLE_ADMIN"));
+        Collection<GrantedAuthority> authorities = List.of(new SimpleGrantedAuthority("ROLE_ADMIN"));
         doReturn(authorities).when(userDetails).getAuthorities();
         when(authenticationManager.authenticate(any(UsernamePasswordAuthenticationToken.class))).thenReturn(auth);
         when(tokenProvider.generateToken(userDetails)).thenReturn("jwt-token");

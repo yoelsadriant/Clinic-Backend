@@ -5,7 +5,6 @@ import com.ultimindstudio.clinic.dto.LookupResponse;
 import com.ultimindstudio.clinic.service.LookupService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
