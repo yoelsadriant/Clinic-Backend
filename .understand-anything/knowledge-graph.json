@@ -62,7 +62,10 @@
         "nodeVersion": "22",
         "testDb": "postgres:16-alpine"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "ci-yml",
+      "name": "ci-yml",
+      "summary": "ci-yml \u2014 ci-cd, github-actions, testing."
     },
     {
       "id": "document:readme-md",
@@ -89,7 +92,10 @@
           "Environment Variables"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "readme-md",
+      "name": "readme-md",
+      "summary": "readme-md \u2014 documentation, onboarding."
     },
     {
       "id": "config:env-example",
@@ -115,7 +121,10 @@
           "ECR_REPO"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "env-example",
+      "name": "env-example",
+      "summary": "env-example \u2014 environment, secrets, configuration."
     },
     {
       "id": "config:maven-wrapper-properties",
@@ -132,7 +141,10 @@
         "mavenVersion": "3.9.6",
         "wrapperVersion": "3.2.0"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "maven-wrapper-properties",
+      "name": "maven-wrapper-properties",
+      "summary": "maven-wrapper-properties \u2014 build-tool, maven."
     },
     {
       "id": "service:dockerfile",
@@ -154,7 +166,10 @@
         "healthCheckPath": "/actuator/health",
         "nonRootUser": "clinic"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "dockerfile",
+      "name": "dockerfile",
+      "summary": "dockerfile \u2014 docker, containerization, multi-stage-build."
     },
     {
       "id": "config:docker-compose-yml",
@@ -182,7 +197,10 @@
           "pgdata"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "docker-compose-yml",
+      "name": "docker-compose-yml",
+      "summary": "docker-compose-yml \u2014 docker-compose, local-dev, orchestration."
     },
     {
       "id": "config:ecs-task-definition",
@@ -209,7 +227,10 @@
         "secretsSource": "AWS Secrets Manager",
         "logDriver": "awslogs"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "ecs-task-definition",
+      "name": "ecs-task-definition",
+      "summary": "ecs-task-definition \u2014 aws, ecs, fargate."
     },
     {
       "id": "config:pom-xml",
@@ -240,7 +261,10 @@
           "actuator"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "pom-xml",
+      "name": "pom-xml",
+      "summary": "pom-xml \u2014 maven, build, dependencies."
     },
     {
       "id": "class:__nofilepath__:application-java",
@@ -259,7 +283,10 @@
           "@SpringBootApplication"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:application-java",
+      "name": "__nofilepath__:application-java",
+      "summary": "__nofilepath__:application-java \u2014 entry-point, spring-boot."
     },
     {
       "id": "class:__nofilepath__:data-seeder",
@@ -287,7 +314,10 @@
           "doctor1/doctor123 (DOCTOR)"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:data-seeder",
+      "name": "__nofilepath__:data-seeder",
+      "summary": "__nofilepath__:data-seeder \u2014 seed-data, config, startup."
     },
     {
       "id": "class:__nofilepath__:open-api-config",
@@ -312,7 +342,10 @@
         "securityScheme": "bearerAuth",
         "schemeType": "HTTP Bearer JWT"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:open-api-config",
+      "name": "__nofilepath__:open-api-config",
+      "summary": "__nofilepath__:open-api-config \u2014 openapi, swagger, config."
     },
     {
       "id": "class:__nofilepath__:security-config",
@@ -349,7 +382,10 @@
           "UserDetailsService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:security-config",
+      "name": "__nofilepath__:security-config",
+      "summary": "__nofilepath__:security-config \u2014 security, jwt, cors."
     },
     {
       "id": "class:__nofilepath__:auth-controller",
@@ -385,7 +421,10 @@
           "AuthService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:auth-controller",
+      "name": "__nofilepath__:auth-controller",
+      "summary": "__nofilepath__:auth-controller \u2014 api-handler, auth, jwt."
     },
     {
       "id": "class:__nofilepath__:beautician-controller",
@@ -439,7 +478,10 @@
           "BeauticianService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:beautician-controller",
+      "name": "__nofilepath__:beautician-controller",
+      "summary": "__nofilepath__:beautician-controller \u2014 api-handler, staff, rest."
     },
     {
       "id": "class:__nofilepath__:client-controller",
@@ -493,7 +535,10 @@
           "ClientService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:client-controller",
+      "name": "__nofilepath__:client-controller",
+      "summary": "__nofilepath__:client-controller \u2014 api-handler, clients, rest."
     },
     {
       "id": "class:__nofilepath__:client-package-controller",
@@ -547,7 +592,10 @@
           "ClientPackageService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:client-package-controller",
+      "name": "__nofilepath__:client-package-controller",
+      "summary": "__nofilepath__:client-package-controller \u2014 api-handler, packages, rest."
     },
     {
       "id": "class:__nofilepath__:client-package-detail-controller",
@@ -601,7 +649,10 @@
           "ClientPackageDetailService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:client-package-detail-controller",
+      "name": "__nofilepath__:client-package-detail-controller",
+      "summary": "__nofilepath__:client-package-detail-controller \u2014 api-handler, packages, rest."
     },
     {
       "id": "class:__nofilepath__:dashboard-controller",
@@ -631,7 +682,10 @@
           "DashboardService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:dashboard-controller",
+      "name": "__nofilepath__:dashboard-controller",
+      "summary": "__nofilepath__:dashboard-controller \u2014 api-handler, dashboard, stats."
     },
     {
       "id": "class:__nofilepath__:history-controller",
@@ -685,7 +739,10 @@
           "HistoryService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:history-controller",
+      "name": "__nofilepath__:history-controller",
+      "summary": "__nofilepath__:history-controller \u2014 api-handler, history, rest."
     },
     {
       "id": "class:__nofilepath__:history-installment-controller",
@@ -741,7 +798,10 @@
           "HistoryInstallmentService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:history-installment-controller",
+      "name": "__nofilepath__:history-installment-controller",
+      "summary": "__nofilepath__:history-installment-controller \u2014 api-handler, installments, history."
     },
     {
       "id": "class:__nofilepath__:installment-controller",
@@ -796,7 +856,10 @@
           "InstallmentService"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:installment-controller",
+      "name": "__nofilepath__:installment-controller",
+      "summary": "__nofilepath__:installment-controller \u2014 api-handler, installments, rest."
     },
     {
       "id": "class:__nofilepath__:login-controller",
@@ -834,7 +897,10 @@
         ],
         "note": "Directly uses repository, no service layer"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:login-controller",
+      "name": "__nofilepath__:login-controller",
+      "summary": "__nofilepath__:login-controller \u2014 api-handler, users, admin."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/NotificationController.java",
@@ -866,7 +932,10 @@
         ],
         "description": "REST controller for notification CRUD. GET endpoints are open; POST/PUT/DELETE require ADMIN or DOCTOR role."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/NotificationController.java",
+      "name": "NotificationController.java",
+      "summary": "NotificationController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/OccupationController.java",
@@ -899,7 +968,10 @@
         "qualifier": "occupationService",
         "description": "REST controller for occupation lookup table. Uses qualifier-injected LookupService. Mutations require ADMIN role."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/OccupationController.java",
+      "name": "OccupationController.java",
+      "summary": "OccupationController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/PackageController.java",
@@ -930,7 +1002,10 @@
         ],
         "description": "REST controller for treatment packages. Mutations require ADMIN role."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/PackageController.java",
+      "name": "PackageController.java",
+      "summary": "PackageController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/PackageDetailController.java",
@@ -961,7 +1036,10 @@
         ],
         "description": "REST controller for package line items (package details). Mutations require ADMIN role."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/PackageDetailController.java",
+      "name": "PackageDetailController.java",
+      "summary": "PackageDetailController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/ProductController.java",
@@ -993,7 +1071,10 @@
         "classLevelAuth": true,
         "description": "REST controller for products; class-level @PreAuthorize restricts entire controller to ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/ProductController.java",
+      "name": "ProductController.java",
+      "summary": "ProductController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/ReportController.java",
@@ -1026,7 +1107,10 @@
         ],
         "description": "Read-only report controller exposing paginated revenue list and total revenue sum; filterable by staffId and ISO date range."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/ReportController.java",
+      "name": "ReportController.java",
+      "summary": "ReportController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/SalesController.java",
@@ -1058,7 +1142,10 @@
         "classLevelAuth": true,
         "description": "REST controller for sales records; class-level ADMIN restriction."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/SalesController.java",
+      "name": "SalesController.java",
+      "summary": "SalesController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/ScheduleController.java",
@@ -1090,7 +1177,10 @@
         ],
         "description": "REST controller for appointment schedules. GETs are open; mutations require ADMIN or DOCTOR."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/ScheduleController.java",
+      "name": "ScheduleController.java",
+      "summary": "ScheduleController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/StaffController.java",
@@ -1121,7 +1211,10 @@
         ],
         "description": "REST controller for staff management. Mutations require ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/StaffController.java",
+      "name": "StaffController.java",
+      "summary": "StaffController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/StatusClientController.java",
@@ -1154,7 +1247,10 @@
         "qualifier": "statusClientService",
         "description": "REST controller for client status lookup table. Uses qualifier-injected LookupService. Mutations require ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/StatusClientController.java",
+      "name": "StatusClientController.java",
+      "summary": "StatusClientController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TreatmentController.java",
@@ -1185,7 +1281,10 @@
         ],
         "description": "REST controller for treatment catalogue. Mutations require ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/TreatmentController.java",
+      "name": "TreatmentController.java",
+      "summary": "TreatmentController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypeAppController.java",
@@ -1218,7 +1317,10 @@
         "qualifier": "typeAppService",
         "description": "REST controller for appointment type lookup table. Uses qualifier-injected LookupService. Mutations require ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/TypeAppController.java",
+      "name": "TypeAppController.java",
+      "summary": "TypeAppController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypeIncomeController.java",
@@ -1251,7 +1353,10 @@
         "qualifier": "typeIncomeService",
         "description": "REST controller for income type lookup table. Uses qualifier-injected LookupService. Mutations require ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/TypeIncomeController.java",
+      "name": "TypeIncomeController.java",
+      "summary": "TypeIncomeController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypePaymentController.java",
@@ -1284,7 +1389,10 @@
         "qualifier": "typePaymentService",
         "description": "REST controller for payment type lookup table. Uses qualifier-injected LookupService. Mutations require ADMIN."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/controller/TypePaymentController.java",
+      "name": "TypePaymentController.java",
+      "summary": "TypePaymentController.java \u2014 controller, api-handler, rest."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/LookupRequest.java",
@@ -1308,7 +1416,10 @@
         ],
         "description": "Generic lookup create/update request record holding a single required name string. Shared by all lookup-table controllers."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/LookupRequest.java",
+      "name": "LookupRequest.java",
+      "summary": "LookupRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/LookupResponse.java",
@@ -1332,7 +1443,10 @@
         ],
         "description": "Generic lookup response record. Used as the response type for all lookup-table endpoints."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/LookupResponse.java",
+      "name": "LookupResponse.java",
+      "summary": "LookupResponse.java \u2014 dto, data-model, record."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/BeauticianRequest.java",
@@ -1357,7 +1471,10 @@
         ],
         "description": "Request DTO for assigning a beautician staff member with a quantity to a service."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/BeauticianRequest.java",
+      "name": "BeauticianRequest.java",
+      "summary": "BeauticianRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageDetailRequest.java",
@@ -1383,7 +1500,10 @@
         ],
         "description": "Request DTO for adding/updating a specific package detail item within a client's package."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageDetailRequest.java",
+      "name": "ClientPackageDetailRequest.java",
+      "summary": "ClientPackageDetailRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageRequest.java",
@@ -1409,7 +1529,10 @@
         ],
         "description": "Request DTO for assigning a package to a client tied to a schedule."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageRequest.java",
+      "name": "ClientPackageRequest.java",
+      "summary": "ClientPackageRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientRequest.java",
@@ -1439,7 +1562,10 @@
         ],
         "description": "Request DTO for creating or updating a clinic client with full demographic fields and assigned staff."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientRequest.java",
+      "name": "ClientRequest.java",
+      "summary": "ClientRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryInstallmentRequest.java",
@@ -1466,7 +1592,10 @@
         ],
         "description": "Request DTO for recording a single installment payment event for a client."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryInstallmentRequest.java",
+      "name": "HistoryInstallmentRequest.java",
+      "summary": "HistoryInstallmentRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryRequest.java",
@@ -1494,7 +1623,10 @@
         ],
         "description": "Request DTO for creating a treatment history record linking a date, staff, client package and treatment."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryRequest.java",
+      "name": "HistoryRequest.java",
+      "summary": "HistoryRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/InstallmentRequest.java",
@@ -1523,7 +1655,10 @@
         ],
         "description": "Request DTO for creating an installment plan for a client with total, due date and remaining amount."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/InstallmentRequest.java",
+      "name": "InstallmentRequest.java",
+      "summary": "InstallmentRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/LoginRequest.java",
@@ -1549,7 +1684,10 @@
         ],
         "description": "Authentication request DTO carrying username and password credentials."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/LoginRequest.java",
+      "name": "LoginRequest.java",
+      "summary": "LoginRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/NotificationRequest.java",
@@ -1574,7 +1712,10 @@
         ],
         "description": "Request DTO for creating or updating a notification with a scheduled datetime and description."
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/dto/request/NotificationRequest.java",
+      "name": "NotificationRequest.java",
+      "summary": "NotificationRequest.java \u2014 dto, data-model, validation."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/PackageDetailRequest.java",
@@ -2093,7 +2234,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Beautician",
+      "name": "Beautician",
+      "summary": "Beautician \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Client",
@@ -2124,7 +2268,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Client",
+      "name": "Client",
+      "summary": "Client \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:ClientPackage",
@@ -2151,7 +2298,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "ClientPackage",
+      "name": "ClientPackage",
+      "summary": "ClientPackage \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:ClientPackageDetail",
@@ -2178,7 +2328,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "ClientPackageDetail",
+      "name": "ClientPackageDetail",
+      "summary": "ClientPackageDetail \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:History",
@@ -2207,7 +2360,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "History",
+      "name": "History",
+      "summary": "History \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:HistoryInstallment",
@@ -2234,7 +2390,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "HistoryInstallment",
+      "name": "HistoryInstallment",
+      "summary": "HistoryInstallment \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Installment",
@@ -2263,7 +2422,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Installment",
+      "name": "Installment",
+      "summary": "Installment \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Login",
@@ -2295,7 +2457,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Login",
+      "name": "Login",
+      "summary": "Login \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Notification",
@@ -2320,7 +2485,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Notification",
+      "name": "Notification",
+      "summary": "Notification \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Occupation",
@@ -2345,7 +2513,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Occupation",
+      "name": "Occupation",
+      "summary": "Occupation \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Package",
@@ -2370,7 +2541,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Package",
+      "name": "Package",
+      "summary": "Package \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:PackageDetail",
@@ -2397,7 +2571,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "PackageDetail",
+      "name": "PackageDetail",
+      "summary": "PackageDetail \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Product",
@@ -2424,7 +2601,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Product",
+      "name": "Product",
+      "summary": "Product \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Sales",
@@ -2455,7 +2635,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Sales",
+      "name": "Sales",
+      "summary": "Sales \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Schedule",
@@ -2485,7 +2668,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Schedule",
+      "name": "Schedule",
+      "summary": "Schedule \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Staff",
@@ -2515,7 +2701,10 @@
           "@ManyToOne"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Staff",
+      "name": "Staff",
+      "summary": "Staff \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:StatusClient",
@@ -2540,7 +2729,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "StatusClient",
+      "name": "StatusClient",
+      "summary": "StatusClient \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:Treatment",
@@ -2565,7 +2757,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "Treatment",
+      "name": "Treatment",
+      "summary": "Treatment \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:TypeApp",
@@ -2591,7 +2786,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "TypeApp",
+      "name": "TypeApp",
+      "summary": "TypeApp \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:TypeIncome",
@@ -2616,7 +2814,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "TypeIncome",
+      "name": "TypeIncome",
+      "summary": "TypeIncome \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "entity:TypePayment",
@@ -2641,7 +2842,10 @@
           "@Table"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "TypePayment",
+      "name": "TypePayment",
+      "summary": "TypePayment \u2014 data-model, jpa-entity, database."
     },
     {
       "id": "class:__nofilepath__:exception:BusinessException",
@@ -2657,7 +2861,10 @@
         "superclass": "RuntimeException",
         "responseStatus": "400 BAD_REQUEST"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:exception:BusinessException",
+      "name": "__nofilepath__:exception:BusinessException",
+      "summary": "__nofilepath__:exception:BusinessException \u2014 error-handling, exception."
     },
     {
       "id": "class:__nofilepath__:exception:GlobalExceptionHandler",
@@ -2684,7 +2891,10 @@
           "ErrorResponse (record: timestamp, status, error, message)"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:exception:GlobalExceptionHandler",
+      "name": "__nofilepath__:exception:GlobalExceptionHandler",
+      "summary": "__nofilepath__:exception:GlobalExceptionHandler \u2014 error-handling, middleware, rest-controller-advice."
     },
     {
       "id": "class:__nofilepath__:exception:ResourceNotFoundException",
@@ -2700,7 +2910,10 @@
         "superclass": "RuntimeException",
         "constructor": "ResourceNotFoundException(String resource, String field, Object value)"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "__nofilepath__:exception:ResourceNotFoundException",
+      "name": "__nofilepath__:exception:ResourceNotFoundException",
+      "summary": "__nofilepath__:exception:ResourceNotFoundException \u2014 error-handling, exception."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/BeauticianRepository.java",
@@ -2719,7 +2932,10 @@
           "findByStaffId(Long staffId) -> Optional<Beautician>"
         ]
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/BeauticianRepository.java",
+      "name": "BeauticianRepository.java",
+      "summary": "BeauticianRepository.java \u2014 repository, data-access, jpa."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageDetailRepository.java",
@@ -2741,7 +2957,10 @@
         ],
         "description": "JPA repository for ClientPackageDetail entity; finds details by parent client package ID"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageDetailRepository.java",
+      "name": "ClientPackageDetailRepository.java",
+      "summary": "ClientPackageDetailRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageRepository.java",
@@ -2763,7 +2982,10 @@
         ],
         "description": "JPA repository for ClientPackage entity; finds packages by client ID"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageRepository.java",
+      "name": "ClientPackageRepository.java",
+      "summary": "ClientPackageRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
@@ -2787,7 +3009,10 @@
         ],
         "description": "JPA repository for Client entity; supports paginated search by name and filtering by assigned staff"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "name": "ClientRepository.java",
+      "summary": "ClientRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryInstallmentRepository.java",
@@ -2809,7 +3034,10 @@
         ],
         "description": "JPA repository for HistoryInstallment entity; retrieves installment history records by client"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryInstallmentRepository.java",
+      "name": "HistoryInstallmentRepository.java",
+      "summary": "HistoryInstallmentRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryRepository.java",
@@ -2834,7 +3062,10 @@
         ],
         "description": "JPA repository for History entity; supports filtering by client, staff, and date range with pagination"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryRepository.java",
+      "name": "HistoryRepository.java",
+      "summary": "HistoryRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/InstallmentRepository.java",
@@ -2857,7 +3088,10 @@
         ],
         "description": "JPA repository for Installment entity; supports lookup by client and overdue detection by due date"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/InstallmentRepository.java",
+      "name": "InstallmentRepository.java",
+      "summary": "InstallmentRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/LoginRepository.java",
@@ -2881,7 +3115,10 @@
         ],
         "description": "JPA repository for Login entity; used for user credential lookup and username uniqueness checks during authentication"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/LoginRepository.java",
+      "name": "LoginRepository.java",
+      "summary": "LoginRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/NotificationRepository.java",
@@ -2904,7 +3141,10 @@
         ],
         "description": "JPA repository for Notification entity; retrieves notifications within a date-time range or after a given timestamp"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/NotificationRepository.java",
+      "name": "NotificationRepository.java",
+      "summary": "NotificationRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/OccupationRepository.java",
@@ -2924,7 +3164,10 @@
         "customMethods": [],
         "description": "JPA repository for Occupation lookup entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/OccupationRepository.java",
+      "name": "OccupationRepository.java",
+      "summary": "OccupationRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageDetailRepository.java",
@@ -2947,7 +3190,10 @@
         ],
         "description": "JPA repository for PackageDetail entity; retrieves detail lines by parent package or treatment"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/PackageDetailRepository.java",
+      "name": "PackageDetailRepository.java",
+      "summary": "PackageDetailRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageRepository.java",
@@ -2967,7 +3213,10 @@
         "customMethods": [],
         "description": "JPA repository for Package entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/PackageRepository.java",
+      "name": "PackageRepository.java",
+      "summary": "PackageRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ProductRepository.java",
@@ -2990,7 +3239,10 @@
         ],
         "description": "JPA repository for Product entity; supports paginated name search"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/ProductRepository.java",
+      "name": "ProductRepository.java",
+      "summary": "ProductRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
@@ -3018,7 +3270,10 @@
         ],
         "description": "JPA repository for Sales entity; supports multi-dimensional filtering and a revenue aggregation query"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+      "name": "SalesRepository.java",
+      "summary": "SalesRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
@@ -3045,7 +3300,10 @@
         ],
         "description": "JPA repository for Schedule entity; supports filtering by client, date range, status, and duplicate-slot detection"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
+      "name": "ScheduleRepository.java",
+      "summary": "ScheduleRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
@@ -3068,7 +3326,10 @@
         ],
         "description": "JPA repository for Staff entity; retrieves active staff and filters by occupation"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
+      "name": "StaffRepository.java",
+      "summary": "StaffRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StatusClientRepository.java",
@@ -3088,7 +3349,10 @@
         "customMethods": [],
         "description": "JPA repository for StatusClient lookup entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/StatusClientRepository.java",
+      "name": "StatusClientRepository.java",
+      "summary": "StatusClientRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TreatmentRepository.java",
@@ -3108,7 +3372,10 @@
         "customMethods": [],
         "description": "JPA repository for Treatment lookup entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/TreatmentRepository.java",
+      "name": "TreatmentRepository.java",
+      "summary": "TreatmentRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeAppRepository.java",
@@ -3128,7 +3395,10 @@
         "customMethods": [],
         "description": "JPA repository for TypeApp lookup entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/TypeAppRepository.java",
+      "name": "TypeAppRepository.java",
+      "summary": "TypeAppRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeIncomeRepository.java",
@@ -3148,7 +3418,10 @@
         "customMethods": [],
         "description": "JPA repository for TypeIncome lookup entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/TypeIncomeRepository.java",
+      "name": "TypeIncomeRepository.java",
+      "summary": "TypeIncomeRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypePaymentRepository.java",
@@ -3168,7 +3441,10 @@
         "customMethods": [],
         "description": "JPA repository for TypePayment lookup entity; provides standard CRUD only"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/repository/TypePaymentRepository.java",
+      "name": "TypePaymentRepository.java",
+      "summary": "TypePaymentRepository.java \u2014 repository, data-access, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtAuthenticationFilter.java",
@@ -3193,7 +3469,10 @@
         ],
         "description": "Spring Security filter that runs once per request; extracts Bearer JWT from Authorization header, validates it via JwtTokenProvider, loads UserDetails and sets authentication in SecurityContextHolder"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/security/JwtAuthenticationFilter.java",
+      "name": "JwtAuthenticationFilter.java",
+      "summary": "JwtAuthenticationFilter.java \u2014 middleware, security, jwt."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtTokenProvider.java",
@@ -3221,7 +3500,10 @@
         ],
         "description": "JWT generation and validation utility; uses HMAC-SHA signing key derived from configurable secret; embeds roles as a claim"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/security/JwtTokenProvider.java",
+      "name": "JwtTokenProvider.java",
+      "summary": "JwtTokenProvider.java \u2014 security, jwt, utility."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/security/UserDetailsServiceImpl.java",
@@ -3245,7 +3527,10 @@
         ],
         "description": "Spring Security UserDetailsService implementation; delegates username lookup to LoginRepository; Login entity must implement UserDetails"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/security/UserDetailsServiceImpl.java",
+      "name": "UserDetailsServiceImpl.java",
+      "summary": "UserDetailsServiceImpl.java \u2014 security, service, authentication."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/security/package-info.java",
@@ -3260,7 +3545,10 @@
         "language": "java",
         "description": "Package-level @NullMarked annotation for the security package (jspecify)"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/security/package-info.java",
+      "name": "package-info.java",
+      "summary": "package-info.java \u2014 java, package-info."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/AuthService.java",
@@ -3288,7 +3576,10 @@
         ],
         "description": "Service interface for authentication operations: login and user registration"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/AuthService.java",
+      "name": "AuthService.java",
+      "summary": "AuthService.java \u2014 service, java, authentication."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/BeauticianService.java",
@@ -3302,7 +3593,10 @@
       ],
       "description": "Service interface for beautician CRUD operations (findAll, findById, create, update, delete) with paginated results.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/BeauticianService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/BeauticianService.java",
+      "name": "BeauticianService.java",
+      "summary": "BeauticianService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageDetailService.java",
@@ -3316,7 +3610,10 @@
       ],
       "description": "Service interface for client package detail CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageDetailService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageDetailService.java",
+      "name": "ClientPackageDetailService.java",
+      "summary": "ClientPackageDetailService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageService.java",
@@ -3330,7 +3627,10 @@
       ],
       "description": "Service interface for client package CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageService.java",
+      "name": "ClientPackageService.java",
+      "summary": "ClientPackageService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientService.java",
@@ -3344,7 +3644,10 @@
       ],
       "description": "Service interface for client CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/ClientService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/ClientService.java",
+      "name": "ClientService.java",
+      "summary": "ClientService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/DashboardService.java",
@@ -3358,7 +3661,10 @@
       ],
       "description": "Service interface exposing a single getStats() method returning DashboardStatsResponse.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/DashboardService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/DashboardService.java",
+      "name": "DashboardService.java",
+      "summary": "DashboardService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/HistoryInstallmentService.java",
@@ -3372,7 +3678,10 @@
       ],
       "description": "Service interface for history installment CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/HistoryInstallmentService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/HistoryInstallmentService.java",
+      "name": "HistoryInstallmentService.java",
+      "summary": "HistoryInstallmentService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/HistoryService.java",
@@ -3386,7 +3695,10 @@
       ],
       "description": "Service interface for treatment history CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/HistoryService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/HistoryService.java",
+      "name": "HistoryService.java",
+      "summary": "HistoryService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/InstallmentService.java",
@@ -3400,7 +3712,10 @@
       ],
       "description": "Service interface for installment CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/InstallmentService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/InstallmentService.java",
+      "name": "InstallmentService.java",
+      "summary": "InstallmentService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/LookupService.java",
@@ -3415,7 +3730,10 @@
       ],
       "description": "Generic shared service interface for lookup-table entities (findAll, findById, create, update, delete) used by multiple lookup controllers.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/LookupService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/LookupService.java",
+      "name": "LookupService.java",
+      "summary": "LookupService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/NotificationService.java",
@@ -3429,7 +3747,10 @@
       ],
       "description": "Service interface for notification CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/NotificationService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/NotificationService.java",
+      "name": "NotificationService.java",
+      "summary": "NotificationService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/PackageDetailService.java",
@@ -3443,7 +3764,10 @@
       ],
       "description": "Service interface for package detail CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/PackageDetailService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/PackageDetailService.java",
+      "name": "PackageDetailService.java",
+      "summary": "PackageDetailService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/PackageService.java",
@@ -3457,7 +3781,10 @@
       ],
       "description": "Service interface for treatment package CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/PackageService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/PackageService.java",
+      "name": "PackageService.java",
+      "summary": "PackageService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/ProductService.java",
@@ -3471,7 +3798,10 @@
       ],
       "description": "Service interface for product CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/ProductService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/ProductService.java",
+      "name": "ProductService.java",
+      "summary": "ProductService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/ReportService.java",
@@ -3486,7 +3816,10 @@
       ],
       "description": "Service interface for revenue reporting: getRevenue (paginated sales by staff/date range) and getTotalRevenue (aggregate BigDecimal).",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/ReportService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/ReportService.java",
+      "name": "ReportService.java",
+      "summary": "ReportService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/SalesService.java",
@@ -3500,7 +3833,10 @@
       ],
       "description": "Service interface for sales transaction CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/SalesService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/SalesService.java",
+      "name": "SalesService.java",
+      "summary": "SalesService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/ScheduleService.java",
@@ -3514,7 +3850,10 @@
       ],
       "description": "Service interface for appointment schedule CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/ScheduleService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/ScheduleService.java",
+      "name": "ScheduleService.java",
+      "summary": "ScheduleService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/StaffService.java",
@@ -3528,7 +3867,10 @@
       ],
       "description": "Service interface for staff CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/StaffService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/StaffService.java",
+      "name": "StaffService.java",
+      "summary": "StaffService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/TreatmentService.java",
@@ -3542,7 +3884,10 @@
       ],
       "description": "Service interface for treatment CRUD operations with pagination.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/TreatmentService.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/TreatmentService.java",
+      "name": "TreatmentService.java",
+      "summary": "TreatmentService.java \u2014 service, interface, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/AuthServiceImpl.java",
@@ -3558,7 +3903,10 @@
       ],
       "description": "Implements AuthService. Handles login (Spring AuthenticationManager + JwtTokenProvider) and user registration (duplicate-check, password encoding, Login entity persistence). Injects LoginRepository, TypeAppRepository, JwtTokenProvider, AuthenticationManager, PasswordEncoder.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/AuthServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/AuthServiceImpl.java",
+      "name": "AuthServiceImpl.java",
+      "summary": "AuthServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/BeauticianServiceImpl.java",
@@ -3572,7 +3920,10 @@
       ],
       "description": "Implements BeauticianService. Manages beautician records linking Staff to beautician entries. Injects BeauticianRepository and StaffRepository.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/BeauticianServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/BeauticianServiceImpl.java",
+      "name": "BeauticianServiceImpl.java",
+      "summary": "BeauticianServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
@@ -3586,7 +3937,10 @@
       ],
       "description": "Implements ClientPackageDetailService. Links ClientPackage to PackageDetail with a quantity. Injects ClientPackageDetailRepository, ClientPackageRepository, PackageDetailRepository.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
+      "name": "ClientPackageDetailServiceImpl.java",
+      "summary": "ClientPackageDetailServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
@@ -3600,7 +3954,10 @@
       ],
       "description": "Implements ClientPackageService. Associates Client, Package, and Schedule into a ClientPackage. Injects ClientPackageRepository, ClientRepository, PackageRepository, ScheduleRepository.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
+      "name": "ClientPackageServiceImpl.java",
+      "summary": "ClientPackageServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientServiceImpl.java",
@@ -3614,7 +3971,10 @@
       ],
       "description": "Implements ClientService. Creates/updates Client entities with associated Staff (marketing officer). Injects ClientRepository and StaffRepository.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientServiceImpl.java",
+      "name": "ClientServiceImpl.java",
+      "summary": "ClientServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
@@ -3629,7 +3989,10 @@
       ],
       "description": "Implements DashboardService. Aggregates stats: total clients, total/active staff, today's schedules, month revenue. Injects ClientRepository, StaffRepository, ScheduleRepository, SalesRepository.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
+      "name": "DashboardServiceImpl.java",
+      "summary": "DashboardServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
@@ -3643,7 +4006,10 @@
       ],
       "description": "Implements HistoryInstallmentService. Tracks payment installment history per client. Injects HistoryInstallmentRepository and ClientRepository.",
       "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
+      "name": "HistoryInstallmentServiceImpl.java",
+      "summary": "HistoryInstallmentServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
@@ -3672,7 +4038,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
+      "name": "HistoryServiceImpl.java",
+      "summary": "HistoryServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
@@ -3700,7 +4069,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
+      "name": "InstallmentServiceImpl.java",
+      "summary": "InstallmentServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java",
@@ -3727,7 +4099,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java",
+      "name": "NotificationServiceImpl.java",
+      "summary": "NotificationServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java",
@@ -3755,7 +4130,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java",
+      "name": "OccupationServiceImpl.java",
+      "summary": "OccupationServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
@@ -3783,7 +4161,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
+      "name": "PackageDetailServiceImpl.java",
+      "summary": "PackageDetailServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java",
@@ -3809,7 +4190,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java",
+      "name": "PackageServiceImpl.java",
+      "summary": "PackageServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java",
@@ -3836,7 +4220,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java",
+      "name": "ProductServiceImpl.java",
+      "summary": "ProductServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java",
@@ -3863,7 +4250,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java",
+      "name": "ReportServiceImpl.java",
+      "summary": "ReportServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
@@ -3894,7 +4284,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "name": "SalesServiceImpl.java",
+      "summary": "SalesServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
@@ -3925,7 +4318,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+      "name": "ScheduleServiceImpl.java",
+      "summary": "ScheduleServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java",
@@ -3952,7 +4348,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java",
+      "name": "StaffServiceImpl.java",
+      "summary": "StaffServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java",
@@ -3980,7 +4379,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java",
+      "name": "StatusClientServiceImpl.java",
+      "summary": "StatusClientServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java",
@@ -4006,7 +4408,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java",
+      "name": "TreatmentServiceImpl.java",
+      "summary": "TreatmentServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java",
@@ -4035,7 +4440,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java",
+      "name": "TypeAppServiceImpl.java",
+      "summary": "TypeAppServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java",
@@ -4064,7 +4472,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java",
+      "name": "TypeIncomeServiceImpl.java",
+      "summary": "TypeIncomeServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java",
@@ -4093,7 +4504,10 @@
         ],
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java",
+      "name": "TypePaymentServiceImpl.java",
+      "summary": "TypePaymentServiceImpl.java \u2014 service, implementation, java."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/package-info.java",
@@ -4107,7 +4521,10 @@
       "properties": {
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/package-info.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/impl/package-info.java",
+      "name": "package-info.java",
+      "summary": "package-info.java \u2014 java, package."
     },
     {
       "id": "file:backend/src/main/java/com/ultimindstudio/clinic/service/package-info.java",
@@ -4121,7 +4538,10 @@
       "properties": {
         "path": "backend/src/main/java/com/ultimindstudio/clinic/service/package-info.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/java/com/ultimindstudio/clinic/service/package-info.java",
+      "name": "package-info.java",
+      "summary": "package-info.java \u2014 java, package."
     },
     {
       "id": "file:backend/src/main/resources/application.properties",
@@ -4143,7 +4563,10 @@
         "swaggerUiPath": "/swagger-ui.html",
         "path": "backend/src/main/resources/application.properties"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/resources/application.properties",
+      "name": "application.properties",
+      "summary": "application.properties \u2014 configuration, spring, database."
     },
     {
       "id": "file:backend/src/main/resources/application-docker.properties",
@@ -4167,7 +4590,10 @@
         ],
         "path": "backend/src/main/resources/application-docker.properties"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/resources/application-docker.properties",
+      "name": "application-docker.properties",
+      "summary": "application-docker.properties \u2014 configuration, spring, docker."
     },
     {
       "id": "file:backend/src/main/resources/application-heroku.properties",
@@ -4192,7 +4618,10 @@
         ],
         "path": "backend/src/main/resources/application-heroku.properties"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/resources/application-heroku.properties",
+      "name": "application-heroku.properties",
+      "summary": "application-heroku.properties \u2014 configuration, deployment, deprecated."
     },
     {
       "id": "file:backend/src/main/resources/application-prod.properties",
@@ -4221,7 +4650,10 @@
         ],
         "path": "backend/src/main/resources/application-prod.properties"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/resources/application-prod.properties",
+      "name": "application-prod.properties",
+      "summary": "application-prod.properties \u2014 configuration, spring, production."
     },
     {
       "id": "file:backend/src/main/resources/db/migration/V1__Initial_Schema.sql",
@@ -4265,7 +4697,10 @@
         ],
         "path": "backend/src/main/resources/db/migration/V1__Initial_Schema.sql"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/resources/db/migration/V1__Initial_Schema.sql",
+      "name": "V1__Initial_Schema.sql",
+      "summary": "V1__Initial_Schema.sql \u2014 database, migration, schema-definition."
     },
     {
       "id": "file:backend/src/main/resources/logback-spring.xml",
@@ -4282,7 +4717,10 @@
         "prodDockerProfile": "JSON console, WARN root, INFO com.ultimindstudio",
         "path": "backend/src/main/resources/logback-spring.xml"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/main/resources/logback-spring.xml",
+      "name": "logback-spring.xml",
+      "summary": "logback-spring.xml \u2014 configuration, logging, monitoring."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/AbstractIntegrationTest.java",
@@ -4305,7 +4743,10 @@
         ],
         "path": "backend/src/test/java/com/ultimindstudio/clinic/AbstractIntegrationTest.java"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/AbstractIntegrationTest.java",
+      "name": "AbstractIntegrationTest.java",
+      "summary": "AbstractIntegrationTest.java \u2014 test, infrastructure, testcontainers."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/IbClinicApplicationTests.java",
@@ -4326,7 +4767,10 @@
         "IbClinicApplicationTests",
         "contextLoads"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/IbClinicApplicationTests.java",
+      "name": "IbClinicApplicationTests.java",
+      "summary": "IbClinicApplicationTests.java \u2014 test, integration-test, spring-boot."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/controller/AuthControllerIT.java",
@@ -4354,7 +4798,10 @@
         "healthCheck_isPublic",
         "getToken"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/controller/AuthControllerIT.java",
+      "name": "AuthControllerIT.java",
+      "summary": "AuthControllerIT.java \u2014 test, integration-test, controller."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/controller/ClientControllerIT.java",
@@ -4381,7 +4828,10 @@
         "delete_asAdmin_returns204",
         "getToken"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/controller/ClientControllerIT.java",
+      "name": "ClientControllerIT.java",
+      "summary": "ClientControllerIT.java \u2014 test, integration-test, controller."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/service/AuthServiceImplTest.java",
@@ -4406,7 +4856,10 @@
         "register_newUsername_createsAndReturnsUser",
         "register_existingUsername_throwsBusinessException"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/service/AuthServiceImplTest.java",
+      "name": "AuthServiceImplTest.java",
+      "summary": "AuthServiceImplTest.java \u2014 test, unit-test, service."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/service/ClientServiceImplTest.java",
@@ -4434,7 +4887,10 @@
         "delete_existingClient_deletesById",
         "delete_unknownId_throwsResourceNotFoundException"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/service/ClientServiceImplTest.java",
+      "name": "ClientServiceImplTest.java",
+      "summary": "ClientServiceImplTest.java \u2014 test, unit-test, service."
     },
     {
       "id": "file:backend/src/test/java/com/ultimindstudio/clinic/service/ScheduleServiceImplTest.java",
@@ -4458,7 +4914,10 @@
         "create_doubleBooking_throwsBusinessException",
         "delete_unknownId_throwsResourceNotFoundException"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/java/com/ultimindstudio/clinic/service/ScheduleServiceImplTest.java",
+      "name": "ScheduleServiceImplTest.java",
+      "summary": "ScheduleServiceImplTest.java \u2014 test, unit-test, service."
     },
     {
       "id": "file:backend/src/test/resources/application-test.properties",
@@ -4478,7 +4937,10 @@
         "app.jwt.secret",
         "app.jwt.expiration-ms"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "backend/src/test/resources/application-test.properties",
+      "name": "application-test.properties",
+      "summary": "application-test.properties \u2014 configuration, test."
     },
     {
       "id": "file:frontend/index.html",
@@ -4496,7 +4958,10 @@
         "root",
         "main.jsx"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/index.html",
+      "name": "index.html",
+      "summary": "index.html \u2014 entry-point, markup."
     },
     {
       "id": "file:frontend/package.json",
@@ -4520,7 +4985,10 @@
         "postcss",
         "autoprefixer"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/package.json",
+      "name": "package.json",
+      "summary": "package.json \u2014 configuration, dependencies."
     },
     {
       "id": "file:frontend/postcss.config.js",
@@ -4538,7 +5006,10 @@
         "tailwindcss",
         "autoprefixer"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/postcss.config.js",
+      "name": "postcss.config.js",
+      "summary": "postcss.config.js \u2014 configuration, build-tool."
     },
     {
       "id": "file:frontend/src/App.jsx",
@@ -4565,7 +5036,10 @@
         "Route",
         "Navigate"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/App.jsx",
+      "name": "App.jsx",
+      "summary": "App.jsx \u2014 entry-point, component, routing."
     },
     {
       "id": "file:frontend/src/api/client.js",
@@ -4589,7 +5063,10 @@
         "interceptors.response",
         "clinic_token"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/api/client.js",
+      "name": "client.js",
+      "summary": "client.js \u2014 utility, api-client, http."
     },
     {
       "id": "file:frontend/src/components/Layout.jsx",
@@ -4613,7 +5090,10 @@
         "Outlet",
         "useAuth"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/components/Layout.jsx",
+      "name": "Layout.jsx",
+      "summary": "Layout.jsx \u2014 component, layout."
     },
     {
       "id": "file:frontend/src/components/Modal.jsx",
@@ -4637,7 +5117,10 @@
         "children",
         "footer"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/components/Modal.jsx",
+      "name": "Modal.jsx",
+      "summary": "Modal.jsx \u2014 component, ui."
     },
     {
       "id": "file:frontend/src/context/AuthContext.jsx",
@@ -4666,7 +5149,10 @@
         "clinic_token",
         "clinic_user"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/context/AuthContext.jsx",
+      "name": "AuthContext.jsx",
+      "summary": "AuthContext.jsx \u2014 component, context, authentication."
     },
     {
       "id": "file:frontend/src/index.css",
@@ -4693,7 +5179,10 @@
         "badge-red",
         "badge-blue"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/index.css",
+      "name": "index.css",
+      "summary": "index.css \u2014 markup, styles."
     },
     {
       "id": "file:frontend/src/main.jsx",
@@ -4712,7 +5201,10 @@
         "AuthProvider",
         "App"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/main.jsx",
+      "name": "main.jsx",
+      "summary": "main.jsx \u2014 entry-point."
     },
     {
       "id": "file:frontend/src/pages/Clients.jsx",
@@ -4737,7 +5229,10 @@
         "handleSaveInst",
         "TabButton"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Clients.jsx",
+      "name": "Clients.jsx",
+      "summary": "Clients.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Dashboard.jsx",
@@ -4760,7 +5255,10 @@
         "stats",
         "/dashboard/stats"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Dashboard.jsx",
+      "name": "Dashboard.jsx",
+      "summary": "Dashboard.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Login.jsx",
@@ -4784,7 +5282,10 @@
         "useAuth",
         "useNavigate"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Login.jsx",
+      "name": "Login.jsx",
+      "summary": "Login.jsx \u2014 component, page, authentication."
     },
     {
       "id": "file:frontend/src/pages/Products.jsx",
@@ -4807,7 +5308,10 @@
         "handleDelete",
         "/products"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Products.jsx",
+      "name": "Products.jsx",
+      "summary": "Products.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Reports.jsx",
@@ -4831,7 +5335,10 @@
         "/reports/revenue/total",
         "/reports/revenue"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Reports.jsx",
+      "name": "Reports.jsx",
+      "summary": "Reports.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Sales.jsx",
@@ -4857,7 +5364,10 @@
         "/sales",
         "/installments/:id/pay"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Sales.jsx",
+      "name": "Sales.jsx",
+      "summary": "Sales.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Schedule.jsx",
@@ -4881,7 +5391,10 @@
         "handleDelete",
         "/schedules"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Schedule.jsx",
+      "name": "Schedule.jsx",
+      "summary": "Schedule.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Staff.jsx",
@@ -4905,7 +5418,10 @@
         "/staff",
         "/occupations"
       ],
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Staff.jsx",
+      "name": "Staff.jsx",
+      "summary": "Staff.jsx \u2014 component, page."
     },
     {
       "id": "file:frontend/src/pages/Treatments.jsx",
@@ -4951,7 +5467,10 @@
         ],
         "description": "Full-page treatments management component with tabbed UI for treatments and packages; supports paginated listing, create/edit/delete via Modal dialogs, and package detail drill-down"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/pages/Treatments.jsx",
+      "name": "Treatments.jsx",
+      "summary": "Treatments.jsx \u2014 component, page, crud."
     },
     {
       "id": "file:frontend/src/utils/format.js",
@@ -4976,7 +5495,10 @@
         "locale": "id-ID (Indonesian)",
         "description": "Pure utility module exporting four locale-aware formatting helpers for currency (Rupiah), date, time, and datetime; used across multiple page components"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/src/utils/format.js",
+      "name": "format.js",
+      "summary": "format.js \u2014 utility, formatting, javascript."
     },
     {
       "id": "file:frontend/tailwind.config.js",
@@ -5012,7 +5534,10 @@
         "plugins": [],
         "description": "Tailwind CSS configuration defining custom clinic brand colors (crimson primary and clinic accent palette) scanned across all JS/JSX and index.html files"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/tailwind.config.js",
+      "name": "tailwind.config.js",
+      "summary": "tailwind.config.js \u2014 configuration, styling, tailwind."
     },
     {
       "id": "file:frontend/vite.config.js",
@@ -5040,7 +5565,10 @@
         },
         "description": "Vite build configuration with React plugin and dev-server proxy forwarding /api and /actuator requests to the Spring Boot backend on port 8080"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "frontend/vite.config.js",
+      "name": "vite.config.js",
+      "summary": "vite.config.js \u2014 configuration, build-system, vite."
     },
     {
       "id": "file:mise.toml",
@@ -5061,7 +5589,10 @@
         },
         "description": "Mise (formerly rtx) tool version pinning file; locks the project to Node.js 22.22.3 for reproducible frontend builds"
       },
-      "complexity": "moderate"
+      "complexity": "moderate",
+      "filePath": "mise.toml",
+      "name": "mise.toml",
+      "summary": "mise.toml \u2014 configuration, toolchain, node."
     }
   ],
   "edges": [
@@ -5622,6 +6153,412 @@
       "type": "implements",
       "direction": "forward",
       "weight": 0.9
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/NotificationController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/OccupationController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/PackageController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/PackageDetailController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/ProductController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/ReportController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/SalesController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/ScheduleController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/StaffController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/StatusClientController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TreatmentController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypeAppController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypeIncomeController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypePaymentController.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/AuthServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/LoginRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/BeauticianServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/BeauticianRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageDetailRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryInstallmentRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/InstallmentRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/InstallmentRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/NotificationRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/OccupationRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageDetailRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ProductRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ProductRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TreatmentRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StatusClientRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TreatmentRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeAppRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeIncomeRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypePaymentRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtAuthenticationFilter.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtTokenProvider.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtAuthenticationFilter.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/security/UserDetailsServiceImpl.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/main/java/com/ultimindstudio/clinic/security/UserDetailsServiceImpl.java",
+      "target": "file:backend/src/main/java/com/ultimindstudio/clinic/repository/LoginRepository.java",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
     }
   ],
   "layers": [
@@ -5644,7 +6581,8 @@
         "file:frontend/src/context/AuthContext.jsx",
         "file:frontend/src/App.jsx",
         "file:frontend/src/main.jsx"
-      ]
+      ],
+      "note": "The user-facing React application. Pages cover the full clinic workflow: client registration, appointment scheduling, treatment history, installment payments, staff and beautician management, sales tracking, and a dashboard overview. Auth state is shared via React Context."
     },
     {
       "id": "layer:frontend-infra",
@@ -5659,7 +6597,8 @@
         "file:frontend/vite.config.js",
         "file:frontend/tailwind.config.js",
         "file:frontend/postcss.config.js"
-      ]
+      ],
+      "note": "Wiring that makes the UI work: Vite build config, Tailwind CSS setup, the Axios-based API client that attaches JWT tokens to every request, and shared utility helpers. Changes here affect all pages."
     },
     {
       "id": "layer:api",
@@ -5680,134 +6619,8 @@
         "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypeAppController.java",
         "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypeIncomeController.java",
         "file:backend/src/main/java/com/ultimindstudio/clinic/controller/TypePaymentController.java"
-      ]
-    },
-    {
-      "id": "layer:service",
-      "name": "Service Layer",
-      "description": "Service interfaces and their implementations containing business logic",
-      "nodeIds": [
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/AuthService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/BeauticianService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageDetailService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/DashboardService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/HistoryInstallmentService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/HistoryService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/InstallmentService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/LookupService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/NotificationService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/PackageDetailService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/PackageService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ProductService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ReportService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/SalesService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ScheduleService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/StaffService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/TreatmentService.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/package-info.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/AuthServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/BeauticianServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/package-info.java"
-      ]
-    },
-    {
-      "id": "layer:data",
-      "name": "Data Layer",
-      "description": "JPA repositories, DTOs (request/response), and SQL schema migrations",
-      "nodeIds": [
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/LookupRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/LookupResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/BeauticianRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageDetailRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryInstallmentRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/InstallmentRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/LoginRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/NotificationRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/PackageDetailRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/PackageRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ProductRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/RegisterUserRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/SalesRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ScheduleRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/StaffRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/TreatmentRequest.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/BeauticianResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ClientPackageDetailResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ClientPackageResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ClientResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/DashboardStatsResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/HistoryInstallmentResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/HistoryResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/InstallmentResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/LoginResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/NotificationResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/PackageDetailResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/PackageResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ProductResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/SalesResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ScheduleResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/StaffResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/TreatmentResponse.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/BeauticianRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageDetailRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryInstallmentRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/InstallmentRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/LoginRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/NotificationRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/OccupationRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageDetailRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ProductRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StatusClientRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TreatmentRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeAppRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeIncomeRepository.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypePaymentRepository.java",
-        "file:backend/src/main/resources/db/migration/V1__Initial_Schema.sql"
-      ]
-    },
-    {
-      "id": "layer:security",
-      "name": "Security Layer",
-      "description": "JWT token handling, authentication filter, Spring Security configuration, and user details service",
-      "nodeIds": [
-        "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtAuthenticationFilter.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtTokenProvider.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/security/UserDetailsServiceImpl.java",
-        "file:backend/src/main/java/com/ultimindstudio/clinic/security/package-info.java"
-      ]
+      ],
+      "note": "Spring REST controllers \u2014 the HTTP boundary of the backend. Each controller maps to one domain (clients, packages, schedules, sales, reports, etc.) and delegates immediately to a service. No business logic lives here."
     },
     {
       "id": "layer:infrastructure",
@@ -5836,7 +6649,170 @@
         "file:backend/src/test/java/com/ultimindstudio/clinic/service/ScheduleServiceImplTest.java",
         "file:backend/src/test/resources/application-test.properties",
         "file:mise.toml"
-      ]
+      ],
+      "note": "Everything outside the application code: Dockerfile and docker-compose for local dev, GitHub Actions CI/CD pipeline, AWS ECS deployment config, application.properties files for each environment, logging configuration, and integration tests."
+    },
+    {
+      "id": "layer:service-interfaces",
+      "name": "Service Contracts",
+      "description": "Java service interfaces defining business operation contracts",
+      "nodeIds": [
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/AuthService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/BeauticianService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageDetailService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientPackageService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ClientService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/DashboardService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/HistoryInstallmentService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/HistoryService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/InstallmentService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/LookupService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/NotificationService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/PackageDetailService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/PackageService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ProductService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ReportService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/SalesService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/ScheduleService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/StaffService.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/TreatmentService.java"
+      ],
+      "note": "Java interfaces that declare what each domain operation does without specifying how. Controllers depend on these interfaces, not the concrete implementations, keeping layers decoupled and making it easy to swap or mock implementations in tests."
+    },
+    {
+      "id": "layer:service-implementations",
+      "name": "Business Logic",
+      "description": "Service implementation classes containing core business logic",
+      "nodeIds": [
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/AuthServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/BeauticianServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageDetailServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientPackageServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ClientServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/DashboardServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryInstallmentServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/HistoryServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/InstallmentServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/NotificationServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/OccupationServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageDetailServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/PackageServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ProductServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ReportServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/SalesServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/ScheduleServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StaffServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/StatusClientServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TreatmentServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeAppServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypeIncomeServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/TypePaymentServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/package-info.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/service/impl/package-info.java"
+      ],
+      "note": "The core of the application. Each *ServiceImpl contains the actual business rules: validating input, orchestrating repository calls, computing installment schedules, generating reports, sending notifications, and enforcing clinic-specific policies."
+    },
+    {
+      "id": "layer:request-dtos",
+      "name": "Request DTOs",
+      "description": "Inbound data transfer objects \u2014 deserialized from HTTP request bodies",
+      "nodeIds": [
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/LookupRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/BeauticianRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageDetailRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientPackageRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ClientRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryInstallmentRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/HistoryRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/InstallmentRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/LoginRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/NotificationRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/PackageDetailRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/PackageRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ProductRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/RegisterUserRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/SalesRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/ScheduleRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/StaffRequest.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/request/TreatmentRequest.java"
+      ],
+      "note": "Plain Java objects that model incoming HTTP request bodies. They carry only the fields the client is allowed to send (no IDs, audit fields, or internal state). Validated with Bean Validation annotations before reaching the service layer."
+    },
+    {
+      "id": "layer:response-dtos",
+      "name": "Response DTOs",
+      "description": "Outbound data transfer objects \u2014 serialized into HTTP response bodies",
+      "nodeIds": [
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/LookupResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/BeauticianResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ClientPackageDetailResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ClientPackageResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ClientResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/DashboardStatsResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/HistoryInstallmentResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/HistoryResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/InstallmentResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/LoginResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/NotificationResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/PackageDetailResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/PackageResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ProductResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/SalesResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/ScheduleResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/StaffResponse.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/dto/response/TreatmentResponse.java"
+      ],
+      "note": "Outbound shapes returned to the frontend. Deliberately separate from JPA entities so that database column changes do not silently break the API contract. Each response DTO is a stable public interface."
+    },
+    {
+      "id": "layer:repositories",
+      "name": "Repositories",
+      "description": "Spring Data JPA repositories for database CRUD and query operations",
+      "nodeIds": [
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/BeauticianRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageDetailRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientPackageRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ClientRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryInstallmentRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/HistoryRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/InstallmentRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/LoginRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/NotificationRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/OccupationRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageDetailRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/PackageRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ProductRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/SalesRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/ScheduleRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StaffRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/StatusClientRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TreatmentRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeAppRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypeIncomeRepository.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/repository/TypePaymentRepository.java"
+      ],
+      "note": "Spring Data JPA interfaces for database access. Extend JpaRepository for free CRUD, and declare custom query methods (findBy*, @Query) for domain-specific lookups such as finding active installments, filtering by beautician, or querying schedule slots."
+    },
+    {
+      "id": "layer:db-schema",
+      "name": "Database Schema",
+      "description": "Flyway SQL migration scripts defining the PostgreSQL schema",
+      "nodeIds": [
+        "file:backend/src/main/resources/db/migration/V1__Initial_Schema.sql"
+      ],
+      "note": "The single Flyway migration (V1__Initial_Schema.sql) that creates the entire PostgreSQL schema on first boot. All tables, foreign keys, indexes, and enum types are defined here. Additional schema changes should be added as new V2__, V3__ migration files."
+    },
+    {
+      "id": "layer:security",
+      "name": "JWT Security",
+      "description": "JWT token generation, validation, authentication filter, and user details loading",
+      "nodeIds": [
+        "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtAuthenticationFilter.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/security/JwtTokenProvider.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/security/UserDetailsServiceImpl.java",
+        "file:backend/src/main/java/com/ultimindstudio/clinic/security/package-info.java"
+      ],
+      "note": "Four classes that secure every request: JwtTokenProvider generates and validates tokens, JwtAuthenticationFilter intercepts each HTTP request to extract and verify the bearer token, and UserDetailsServiceImpl loads the clinic user from the database so Spring Security can perform role checks."
     }
   ],
   "tour": [
